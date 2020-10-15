@@ -19,3 +19,6 @@ Route::get('/', 'HomeController@home');
 Route::get('/register', 'AuthController@register');
 Route::get('/welcome', 'AuthController@welcome2');
 Route::post('/welcome', 'AuthController@welcome2');
+Route::get('/master', function(){
+	return view('master');
+});
